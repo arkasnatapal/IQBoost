@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: #000000;
+}
+nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    z-index: 1;
+    position:fixed;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 40px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(135, 122, 122);
+}
+a:active{
+  font-weight: 20px;
+  color: #f65757;
+}
+
+.nav-ul{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    gap: 3rem;
+}
+#s1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 15rem;
+    min-height: 90vh;
+    font-family: "Aboreto", serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    padding-left: 3rem;
+    height: 90vh;
+    width: 100vh;
+    color: white;
+    flex-direction: column;
+}
+.welcome{
+    left: 2px;
+    font-size: 2rem;
+    animation: opacity 1s 1 linear;
+    padding-top: 2rem;
+}
+.heading{
+  font-size: 8rem;
+  font-family: poppins;
+  color: #f13571;
+  animation: translate 1s 1 linear;
+}
+.details1{
+    font-size: 1.45rem;
+    margin-top: 20px;
+    white-space: nowrap;
+    overflow:hidden;
+    animation: typing2 4s steps(49, end) forwards, blink-caret 0.75s step-end 1.5;
+}
+.details2{
+    font-size: 1.45rem;
+    white-space: nowrap;
+    overflow:hidden;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 0;
+    animation: typing2 4s steps(52, end) 3.8s forwards, blink-caret 0.75s step-end 1;
+}
+.details3{
+    font-size: 1.45rem;
+    white-space: nowrap;
+    overflow:hidden;
+    width: 0;
+    animation: typing2 4s steps(13, end) 7s forwards, blink-caret 0.75s step-end 1;
+  };
+
+.right{
+    display: flex;
+    height: 90vh;
+    width: 60vh;
+}
+.logomain{
+    filter: drop-shadow(0 0 5rem rgba(224, 75, 206, 0.9));
+    animation: glow 4s infinite ease-in-out 2s ,opacity 2s 1 linear;
+}
+#s2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    font-family: "Aboreto", serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+.wrapper{
+  display: flex;
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+@keyframes typing2 {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: rgb(0, 0, 0); }
+}
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 5rem rgba(224, 75, 206, 0.9));
+    }
+    50%{
+        filter: drop-shadow(0 0 5rem rgba(255, 255, 255, 0.9));
+    }
+    100%{
+        filter: drop-shadow(0 0 5rem rgba(255, 0, 0, 0.9));
+    }
+
+}
+@keyframes glow2 {
+  0% {
+      filter: drop-shadow(0 0 5rem rgba(185, 11, 243, 0.9));
+  }
+  50%{
+      filter: drop-shadow(0 0 5rem rgba(202, 129, 233, 0.9));
+  }
+  100%{
+    filter: drop-shadow(0 0 5rem rgba(185, 11, 243, 0.9));
+  }
+
+}
+
+@keyframes opacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes translate {
+  0%{
+    opacity:0;
+    color: #000000;
+    translate: -650px;
+  }
+  100%{
+    opacity:1;
+    color: #f13571;
+    translate: 0px;
+  }
+}
+#s3{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 90vh;
+  color: WHITE;
+  font-family: "Aboreto", serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  gap: 5rem;
+}
+#s3 h1{
+  font-size: 6rem;
+  font-family: "Lexend", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: linear-gradient(to right,#ed4d8b,#ff6b08,#cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  
+}
+.features{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 6rem;
+
+}
+.f1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+  padding-left: 2rem;
+  border-radius: 20px;
+  padding-right: 2rem;
+  animation: glow2 2s infinite linear ;
+}
+.f1 img{
+  height: 20vh;
+  width: 20vh;
+}
+.f1 p{
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Kumbh Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:"YOPQ" 300;
+}
+#s4{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+    gap: 3.5rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    color: WHITE;
+    font-family: "Aboreto", serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+.person{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.picceo{
+  background-image: url(FrontPage/MEMBERS/arka.jpg);
+  background-size: cover;
+
+  height: 40vh;
+  width: 40vh;
+  border-radius: 50%;
+}
+.piccfo{
+  background-image: url(FrontPage/MEMBERS/Riya.jpg);
+  background-size: cover;
+  height: 40vh;
+  width: 40vh;
+  border-radius: 50%;
+}
+.piccoo{
+  background-image: url(FrontPage/MEMBERS/HARSHIT.jpg);
+  background-size:cover;
+  height: 40vh;
+  width: 40vh;
+  border-radius: 50%;
+}
+.person{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+#team {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+} 
+#team h5{
+  padding-top: 2rem;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+#team p{
+  font-size:medium;
+}
+#s4 span{
+  color: #ef1258;
+}
+.profile{
+  box-shadow: 0 0 3rem #cf23cf;
+  animation: profile 10s infinite ease-in-out;
+}
+@keyframes profile{
+  0% {
+    box-shadow: 0 0 3rem #cf23cf;
+}
+50%{
+  box-shadow: 0 0 5rem #55e6c4
+}
+100%{
+  box-shadow: 0 0 3rem #cf23cf;
+}
+}
+#s5{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 90vh;
+  gap: 3.5rem;
+  color: WHITE;
+  font-family: "Aboreto", serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+}
+#s5 span{
+  color: #ef1258;
+}
+marquee h1{
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+
+}marquee span{
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.marquee{
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 50px;
+  color: #65f0ff;
+  overflow-x: hidden;
+}
+.marquee1{
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  color: #65f0ff;
+  height: 50px;
+  overflow-x: hidden;
+
+}
+.content{
+  font-size: 2rem;
+}
+.track{
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+}
+@keyframes marquee{
+  from{
+    transform: translateX(-50%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+.copyright{
+  display: flex;
+  justify-content: center;align-items: center;
+  color: #fff;
+  font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 40px;
+    text-shadow: 0 0 2rem #cf23cf;
+  padding-bottom: 10px;
+}
