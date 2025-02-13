@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: #000000;
+}
+nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    z-index: 1;
+    position:fixed;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 40px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(135, 122, 122);
+}
+a:active{
+  font-weight: 20px;
+  color: #f65757;
+}
+section{
+    overflow-x: hidden;
+}
+.nav-ul{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    gap: 3rem;
+}
+section .animate{
+    transition: 1s;
+
+}
+section .animate1{
+    transition: 1s;
+
+}
+.s1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 90vh;
+    font-family: "Aboreto", serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+.help{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 15vh;
+   animation: translate 1.1s ease-in-out 1; 
+}
+.help img{
+ height: 70vh;
+ filter: brightness(0.9);
+}
+.details{
+    color: #00df82;
+    font-family: "Aboreto", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    animation: opacity 1s ease-in 1;
+    flex-direction: column;
+}
+.details input{
+    width: 70vh;
+    padding: 1rem;
+    background-color:rgba(111, 182, 151, 0.4);
+    border-radius: 50px;
+    color:rgb(52, 243, 173);
+    border: none;
+    opacity: 0.9;
+    outline: 2px red;
+    box-shadow: 0 0rem 1rem #00df82;
+}
+.details input:hover{
+    background-color:rgba(111, 182, 151, 0.6);
+}
+input::placeholder{
+ color: whitesmoke;
+}
+.details input:active{
+    box-shadow: 0 0rem 2rem #05e650;
+}
+.email{
+    width: 70vh;
+    border-radius: 50px;
+    height: 5vh;
+    font-size: medium;
+}
+.s2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Aboreto", serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+.s2 .animate{
+    transform: scale(0);
+}
+.s2.show-animate .animate{
+    transform: scale(1);
+}
+.s2 .animate1{
+    transform: translateX(110%);
+}
+.s2.show-animate .animate1{
+    transform: translateX(0);
+}
+
+.faq{
+    color: #00df82;
+    font-family: "Aboreto", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    display: flex;
+    justify-content: left;
+    padding-left:2rem;
+    align-items: left;
+    gap: 2rem;
+    flex-direction: column;
+}
+.faq-img{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.faq-img img{
+ height: 70vh;
+ filter: brightness(0.9);
+}
+strong{
+    font-size: 2rem;
+}
+.answer {
+    display: none;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: small;
+    border-top: 1px solid #ccc;
+}
+button{
+    border-radius: 50%;
+    height: 30px;
+    text-align: center;
+    width: 30px;
+    box-shadow: 0 0rem 0.5rem #05e650;
+    color: #ccc;
+    background-color: rgba(103, 230, 239,0.5);
+    border: none;
+}
+.faq-item .ques{
+    display:flex ;
+    align-items: center;
+    gap: 1rem;
+}
+.ques strong{
+    color: #acf3ad;
+    font-size: smaller;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button:hover{
+    background-color: #80d481;
+    color: red;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "Inter", serif;
+      font-optical-sizing: auto;
+      font-weight: 40px;
+    padding-bottom: 10px;
+  }
+.hide{
+    display: none;
+}
+@keyframes translate {
+    0%{
+      opacity:0;
+      translate: -650px;
+    }
+    100%{
+      opacity:1;
+      translate: 0px;
+    }
+  }
+  @keyframes opacity {
+    0% {
+        opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+  }
