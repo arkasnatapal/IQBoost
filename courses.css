@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+body {
+    background: linear-gradient(to left, #0b0b0b, #38132f);
+    color: #fff;
+}
+nav span{
+    color: #f60b0b;
+}
+nav{
+    color: white;
+    display: flex;
+    background: linear-gradient(to left, #0b0b0b, #38132f);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    z-index: 1;
+    position:fixed;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 40px;
+}
+.s1{
+        padding-top: 15vh;
+        gap: 15rem;
+        min-height: 100vh;
+        font-family: "Aboreto", serif;
+        overflow: hidden;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(135, 122, 122);
+}
+a:active{
+  font-weight: 20px;
+  color: #f65757;
+}
+.nav-ul{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    gap: 3rem;
+}
+#login{
+    position: relative;
+    left: 60vh;
+    font-size: 20px;
+    padding: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  i{
+    color: rgb(137, 248, 187);
+  }
+  i:hover{
+    color: rgb(75, 225, 143);
+  }
+  i:active{
+    color: rgb(54, 158, 101);
+  }
+h1 {
+    color: #c039ff;
+    text-align: center;
+}
+.filter-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.filter-bar button {
+    background-color: #5e5e81;
+    color: #c6c6c6;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    font-family: "Inter", serif;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.filter-bar button:hover{
+    background-color: #5f4d67;
+}
+.filter-bar button.active {
+    background-color: #7c2ea0;
+    font-weight: bold;
+    color: #fff;
+}
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+}
+.course-card {
+    background: #2e2e4e;
+    border-radius: 10px;
+    padding: 20px;
+    animation: opacity 0.5s ease-in;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    cursor:pointer;
+}
+.course-card:hover{
+    transform: scale(1.05);
+    outline: 3px solid rgb(156, 115, 198);
+    background: #1d1d2f;
+}
+
+.course-card h3 {
+    color: #c039ff;
+}
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

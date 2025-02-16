@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - IQ BOOST</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="courses.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="website icon" type="png" href="FrontPage/LOGO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <ul class="nav-ul">
+            <li><a href="frontpage.html">HOME</a></li>
+            <li><a href="explore.html">EXPLORE</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="support.html">SUPPORT</a></li>
+            <li><a href="iqboost+.html"><span>IQBOOST+</span></a></li>
+            <li id="login"><a href = "login.html"><i class="fa-duotone fa-solid fa-user"></i></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section class="s1">
+            <div class="filter-bar">
+                <button class="filter-btn active" onclick="filterCourses('all')">All</button>
+                <button class="filter-btn" onclick="filterCourses('class-1-5')">Class 1-5</button>
+                <button class="filter-btn" onclick="filterCourses('class-6-8')">Class 6-8</button>
+                <button class="filter-btn" onclick="filterCourses('class-9-10')">Class 9-10</button>
+                <button class="filter-btn" onclick="filterCourses('class-11-12')">Class 11-12</button>
+                <button class="filter-btn" onclick="filterCourses('class-university')">University</button>
+            </div>
+            <div class="courses">
+                <div class="course-card class-1-5">
+                    <h3>Class 1 - Mathematics</h3>
+                    <p>Basic arithmetic and fun activities.</p>
+                </div>
+                <div class="course-card class-6-8">
+                    <h3>Class 6 - Science</h3>
+                    <p>Introduction to Physics, Chemistry, and Biology.</p>
+                </div>
+                <div class="course-card class-9-10">
+                    <h3>Class 9 - Social Studies</h3>
+                    <p>History, Geography, Political Science, and Economics.</p>
+                </div>
+                <div class="course-card class-11-12">
+                    <h3>Class 11 - Physics</h3>
+                    <p>Mechanics, Thermodynamics, and more.</p>
+                </div>
+                
+                <div class="course-card class-1-5" data-grade="1">
+                    <h3>Class 1 - Introduction to Numbers</h3>
+                    <p>Learn the basics of numbers and counting.</p>
+                </div>
+                <div class="course-card class-1-5" data-grade="2">
+                    <h3>Class 2 - Basic Addition</h3>
+                    <p>Introduction to addition and simple math.</p>
+                </div>
+                <div class="course-card class-1-5" data-grade="3">
+                    <h3>Class 3 - Basic Subtraction</h3>
+                    <p>Introduction to subtraction and simple math.</p>
+                </div>
+                <div class="course-card class-1-5" data-grade="4">
+                    <h3>Class 4 - Multiplication</h3>
+                    <p>Introduction to multiplication and times tables.</p>
+                </div>
+                <div class="course-card class-1-5" data-grade="5">
+                    <h3>Class 5 - Division</h3>
+                    <p>Introduction to division and sharing.</p>
+                </div>
+                <div class="course-card class-6-8" data-grade="6">
+                    <h3>Class 6 - Fractions</h3>
+                    <p>Learn about fractions and parts of a whole.</p>
+                </div>
+                <div class="course-card class-6-8" data-grade="7">
+                    <h3>Class 7 - Decimals</h3>
+                    <p>Introduction to decimals and their uses.</p>
+                </div>
+                <div class="course-card class-6-8" data-grade="8">
+                    <h3>Class 8 - Algebra Basics</h3>
+                    <p>Basic concepts of algebra.</p>
+                </div>
+                <div class="course-card class-9-10" data-grade="9">
+                    <h3>Class 9 - Geometry</h3>
+                    <p>Introduction to shapes and geometry.</p>
+                </div>
+                <div class="course-card class-9-10" data-grade="10">
+                    <h3>Class 10 - Trigonometry</h3>
+                    <p>Learn about angles and triangles.</p>
+                </div>
+                <div class="course-card class-11-12" data-grade="11">
+                    <h3>Class 11 - Calculus</h3>
+                    <p>Introduction to calculus concepts.</p>
+                </div>
+                <div class="course-card class-11-12" data-grade="12">
+                    <h3>Class 12 - Advanced Math</h3>
+                    <p>Complex mathematical problems and theories.</p>
+                </div>
+                <div class="course-card class-university" data-grade="13">
+                    <h3>University - Linear Algebra</h3>
+                    <p>In-depth study of linear equations and matrices.</p>
+                </div>
+                <div class="course-card class-university" data-grade="13">
+                    <h3>University - Frontend Developement</h3>
+                    <p>In-depth study of HTML, CSS and JS with projects.</p>
+                </div>
+                <div class="course-card class-university" data-grade="13">
+                    <h3>University - Data Structure and Algorithms</h3>
+                    <p>Learn algorithm and data structures with clear cut concepts.</p>
+                </div>
+    
+            </div>
+        </section>
+    </div>
+    
+    <script src="courses.js"></script>
+</body>
+</html>
