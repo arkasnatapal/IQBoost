@@ -6,10 +6,10 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  background: #000000;
+  background: linear-gradient(to left, #000000,#000000, #2f1246);
 }
 nav{
-    background-color: black;
+  background: linear-gradient(to left, #000000,#000000, #2f1246);
     color: white;
     display: flex;
     text-decoration: none;
@@ -22,6 +22,28 @@ nav{
     font-family: "Inter", serif;
     font-optical-sizing: auto;
     font-weight: 40px;
+}
+#login{
+  position: relative;
+  left: 60vh;
+  font-size: 20px;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+i{
+  color: rgb(137, 248, 187);
+}
+i:hover{
+  color: rgb(75, 225, 143);
+}
+i:active{
+  color: rgb(54, 158, 101);
+}
+
+nav span{
+  color: #f60b0b;
 }
 a{
   color: white;
@@ -313,7 +335,7 @@ a:active{
 }
 .piccoo{
   background-image: url(FrontPage/MEMBERS/HARSHIT.jpg);
-  background-size:cover;
+  background-size: cover;
   height: 40vh;
   width: 40vh;
   border-radius: 50%;
