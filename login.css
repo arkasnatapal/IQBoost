@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: linear-gradient(to left, #0b0b0b, #12424d);
+  color: #fff;
+}
+nav{
+    background: linear-gradient(to left, #0b0b0b, #12424d);
+    color: white;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    z-index: 1;
+    position:fixed;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 40px;
+}
+#login{
+  position: relative;
+  left: 60vh;
+  font-size: 20px;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+i{
+  color: rgb(137, 248, 187);
+}
+i:hover{
+  color: rgb(75, 225, 143);
+}
+i:active{
+  color: rgb(54, 158, 101);
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(135, 122, 122);
+}
+a:active{
+  font-weight: 20px;
+  color: #f65757;
+}
+nav span{
+  color: #f60b0b;
+}
+.nav-ul{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    gap: 3rem;
+}
+
+.s1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 90vh;
+    font-family: "Aboreto", serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+.s1 .left{
+    display: flex;
+    justify-content: center;
+    padding-left: 3rem;
+    height: 90vh;
+    width: 100vh;
+    color: white;
+    flex-direction: column;
+    animation: ltr 1.5s 1 ease;
+}
+@keyframes ltr{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform:translateX(0)
+    }
+}
+
+.s1 .right{
+    padding-left: 3rem;
+    height: 100vh;
+    width: 100vh;
+    color: white;
+    flex-direction: column;
+}
+.loginpage{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 50px;
+    width: 420px;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */    
+}
+.profilebody{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height:100vh;
+    background-image: url(profile/profile.jpg);
+    background-size:100%;
+}
+.loginpage h1{
+    text-align: center;
+    font-size: 36px;
+    padding-top: 11px;
+}
+.loginpage .inputbox{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+display: flex;justify-content: center;align-items: center;
+}
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius:40px;
+    font-size: 16px;
+    color: #fff;
+    padding-left: 20px;
+}
+.inputbox input::placeholder{
+    color: #fff;
+}
+.loginpage .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.remember-forget label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember-forget{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+.loginpage .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow:  0 0 10px rgba(0,0,0, 0.1);
+    cursor: pointer;
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+    transition: ease-in-out 50ms ;
+}
+.btn:hover{
+    background:linear-gradient(to right, rgb(89, 77, 77),rgb(194, 191, 191));
+}
+.btn:active{
+    transform: scale(0.9);
+    background:linear-gradient(to right, rgb(85, 54, 54),rgb(194, 191, 191));
+}
+.loginpage .register-link{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    padding: 20px;
+    color: #fff;   
+}
+.register-link a:hover{
+    text-decoration: underline;
+}

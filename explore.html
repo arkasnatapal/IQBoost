@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQBOOST - Explore</title>
+    <link rel="stylesheet" href="explore.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link rel="website icon" type="png" href="FrontPage/LOGO.png">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <ul class="nav-ul">
+            <li><a href="frontpage.html">HOME</a></li>
+            <li><a href="explore.html">EXPLORE</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="support.html">SUPPORT</a></li>
+            <li><a href="iqboost+.html"><span>IQBOOST+</span></a></li>
+            <li id="login"><a href = "login.html"><i class="fa-duotone fa-solid fa-user"></i></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <section class="s1">
+            <div class="left">
+            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+<dotlottie-player src="https://lottie.host/eb77a268-c87d-474f-af22-979b8c1890cd/LDmdxtRp1h.lottie" background="transparent" speed="1" style="width: 70vh; height: 70vh" loop autoplay></dotlottie-player>
+</div>
+<div class="right">
+    <h1>
+        HEY <span>Smarty</span> !
+    </h1>
+    <p id="s1-details"><I> We have something special for you</I><br>
+    Take a <span>DEEP BREATH</span> before you scroll down 🙃</p>
+    </div>
+        </section>
+        <section class="s2">
+            <div class="left">
+             <h6 class="s2-l1"> Let's see how much you know ? </h6>
+             <h3 class="s2-l2"> DAILY QUIZES </h3>
+    </div>
+    <div class="right">
+        <div class="container">
+            <div id="quiz-container">
+                <div id="question">Quiz Loading...</div>
+                <div id="options"></div>
+                <button id="next-button" class="hidden">Next Question</button>
+            </div>
+            <div id="score-container" class="hidden">
+                <h4>Your Score: <span id="score"></span></h4>
+            </div>
+        </div>
+        </div>
+        </section>
+        <section class="s3">
+            <div class="left">
+                <div class="container">
+                    <h1>Match the Following</h1>
+                    <div class="match-container">
+                        <div class="column left">
+                            <ul id="questions-list"></ul>
+                        </div>
+                        <div class="column right" id="answers-list"></div>
+                    </div>
+                    <button onclick="checkAnswers()">Submit</button>
+                    <p id="result"></p>
+                </div>
+            </div>
+            <div class="right">
+                <h1><span>Connect</span></h1>
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                <dotlottie-player src="https://lottie.host/95fbdb7b-3410-4413-88cf-c47a071b6af8/PhmRRLTV6U.lottie" background="transparent" speed="0.5" style="width: 600px; height: 600px" loop autoplay></dotlottie-player></div>
+        </section>
+    <script src="explore.js"></script>
+</body>
+</html>
