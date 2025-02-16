@@ -4,6 +4,10 @@
 IQ-Boost is an AI-powered educational platform designed to support students throughout their journey of life. Our mission is to empower millions of learners by providing personalized educational experiences, intelligent tutoring, and comprehensive resources to help them achieve their goals.
 
 ---
+# Site is LIVE at 
+
+https://arkasnatapal.github.io/IQBoost/
+---
 
 ## 🚀 Features
 
