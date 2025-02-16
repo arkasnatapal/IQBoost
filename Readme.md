@@ -23,16 +23,6 @@ IQ-Boost is an AI-powered educational platform designed to support students thro
 
 ---
 
-## 🔧 Tech Stack
-
-- **Frontend:** React.js, Tailwind CSS
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **AI Integration:** TensorFlow, OpenAI API
-- **Hosting & Deployment:** Vercel / Netlify
-
----
-
 ## 🚀 Getting Started
 
 1. **Clone the repository:**
