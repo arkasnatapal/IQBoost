@@ -316,15 +316,31 @@ a:active{
   text-align: center;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 0.2rem;
+}
+.op{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 14.25vw;
 }
 .picceo{
   background-image: url(FrontPage/MEMBERS/arka.jpg);
   background-size: cover;
-
-  height: 40vh;
-  width: 40vh;
+  height: 50vh;
+  width: 50vh;
+  border: 3px solid #19dcdf;
   border-radius: 50%;
+}
+.CEO{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15vw;
+}
+.details-ceo{
+  gap: 2.5px;
 }
 .piccfo{
   background-image: url(FrontPage/MEMBERS/Riya.jpg);
@@ -334,8 +350,15 @@ a:active{
   border-radius: 50%;
 }
 .piccoo{
-  background-image: url(FrontPage/MEMBERS/HARSHIT.jpg);
+  background-image: url(FrontPage/MEMBERS/akash.jpg);
   background-size: cover;
+  height: 40vh;
+  width: 40vh;
+  border-radius: 50%;
+}
+.piccmo{
+  background-image: url(FrontPage/MEMBERS/atal.jpg);
+  background-size:cover;
   height: 40vh;
   width: 40vh;
   border-radius: 50%;
@@ -349,12 +372,6 @@ a:active{
   justify-content: center;
   align-items: center;
 }
-#team {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-} 
 #team h5{
   padding-top: 2rem;
   font-family: "Poppins", serif;
