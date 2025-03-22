@@ -1,0 +1,45 @@
+[debug] [2025-03-22T06:42:23.985Z] ----------------------------------------------------------------------
+[debug] [2025-03-22T06:42:23.988Z] Command:       /nix/store/ixbb20farqh1f4fqbmsn6b1ixn8mc8ij-nodejs-20.18.1/bin/node /nix/store/afsz9hjxdxs4jy6iiw7sdv54cna6j7gm-firebase-tools-13.34.0/lib/node_modules/firebase-tools/lib/bin/firebase.js init hosting
+[debug] [2025-03-22T06:42:23.989Z] CLI Version:   13.34.0
+[debug] [2025-03-22T06:42:23.989Z] Platform:      linux
+[debug] [2025-03-22T06:42:23.989Z] Node Version:  v20.18.1
+[debug] [2025-03-22T06:42:23.989Z] Time:          Sat Mar 22 2025 06:42:23 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-03-22T06:42:23.990Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-22T06:42:23.997Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-22T06:42:23.998Z] > authorizing via signed-in user (arka4551@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/user/IQBoost
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-03-22T06:42:38.104Z] Checked if tokens are valid: true, expires at: 1742629284671
+[debug] [2025-03-22T06:42:38.104Z] Checked if tokens are valid: true, expires at: 1742629284671
+[debug] [2025-03-22T06:42:38.108Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/availableProjects pageSize=100
+[debug] [2025-03-22T06:42:38.876Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/availableProjects 200
+[debug] [2025-03-22T06:42:38.876Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/availableProjects [omitted]
+[debug] [2025-03-22T06:42:55.200Z] Checked if tokens are valid: true, expires at: 1742629284671
+[debug] [2025-03-22T06:42:55.200Z] Checked if tokens are valid: true, expires at: 1742629284671
+[debug] [2025-03-22T06:42:55.200Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/careful-result-435419-v1:addFirebase [none]
+[debug] [2025-03-22T06:42:55.591Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/careful-result-435419-v1:addFirebase 403
+[debug] [2025-03-22T06:42:55.591Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/careful-result-435419-v1:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-03-22T06:42:55.593Z] Request to https://firebase.googleapis.com/v1beta1/projects/careful-result-435419-v1:addFirebase had HTTP Error: 403, The caller does not have permission
+[debug] [2025-03-22T06:42:55.615Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/careful-result-435419-v1:addFirebase had HTTP Error: 403, The caller does not have permission
+    at responseToError (/nix/store/afsz9hjxdxs4jy6iiw7sdv54cna6j7gm-firebase-tools-13.34.0/lib/node_modules/firebase-tools/lib/responseToError.js:52:12)
+    at RetryOperation._fn (/nix/store/afsz9hjxdxs4jy6iiw7sdv54cna6j7gm-firebase-tools-13.34.0/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
